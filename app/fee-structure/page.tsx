@@ -52,7 +52,7 @@ export default function FeeStructurePage() {
                   <tr className="hover:bg-gray-50">
                     <td className="border-b p-4 font-medium">Diploma in GNM</td>
                     <td className="border-b p-4">3 Years</td>
-                    <td className="border-b p-4">₹1,15,000</td>
+                    <td className="border-b p-4">₹1,50,000</td>
                     <td className="border-b p-4">₹54,000</td>
                     {/* <td className="border-b p-4">₹12,000</td> */}
                     {/* <td className="border-b p-4 font-medium">₹1,69,000</td> */}
