@@ -19,6 +19,7 @@ import NewsNotifications from "@/components/news-notifications"
 import FacilityGallery from "@/components/facility-gallery"
 import HeroImage from "../public/hero-main.jpeg"
 
+
 export default function Home() {
   return (
     <>
@@ -220,7 +221,7 @@ export default function Home() {
               
             </div>
 
-            {/* <div className="rounded-lg bg-white p-6 shadow-md animate-on-scroll animation-delay-200">
+            <div className="rounded-lg bg-white p-6 shadow-md animate-on-scroll animation-delay-200">
               <div className="flex items-center gap-4">
                 <div className="rounded-full bg-teal-100 p-3">
                   <Calendar className="h-6 w-6 text-teal-600" />
@@ -278,7 +279,7 @@ export default function Home() {
               <Link href="#" className="mt-6 inline-flex items-center text-teal-600 hover:text-teal-700">
                 View complete calendar <ChevronRight className="ml-1 h-4 w-4" />
               </Link>
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
@@ -352,14 +353,14 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-gray-900">Student Amenities</h3>
               </div>
               <p className="mt-4 text-gray-600">
-                We provide comfortable hostels, cafeteria, sports facilities, and recreational areas.
+                We provide comfortable hostels.
               </p>
               <ul className="mt-6 space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
                   <span>Separate hostels for male and female students</span>
                 </li>
-                <li className="flex items-start gap-2">
+                {/* <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
                   <span>Hygienic cafeteria with nutritious meal options</span>
                 </li>
@@ -374,7 +375,7 @@ export default function Home() {
                 <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
                   <span>Wi-Fi enabled campus</span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -382,14 +383,14 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="bg-white py-16 sm:py-24">
+      {/* <section id="testimonials" className="bg-white py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl animate-on-scroll">
               Student Testimonials
             </h2>
             <p className="mt-4 text-lg text-gray-600 animate-on-scroll animation-delay-200">
-              Hear from our alumni about their experiences at Modern Nursing Institute.
+              Hear from our alumni about their experiences at S.K.M. College of Nursing & Paramedical Institute.
             </p>
           </div>
 
@@ -397,7 +398,7 @@ export default function Home() {
             <TestimonialCarousel />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* BSCC Notification Section */}
       <section id="bscc" className="bg-gray-50 py-16 sm:py-24">
@@ -479,11 +480,11 @@ export default function Home() {
               </h2>
             </div>
             <p className="mt-6 text-gray-600">
-              Modern Nursing Institute maintains a zero-tolerance policy towards ragging in any form. Ragging is
+            S.K.M. College of Nursing & Paramedical maintains a zero-tolerance policy towards ragging in any form. Ragging is
               strictly prohibited within the campus, hostels, and all institute-affiliated locations. Any student found
               engaging in ragging will face severe disciplinary action as per UGC regulations and state laws.
             </p>
-            <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
+            {/* <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
               <div className="rounded-md bg-white p-4 shadow-sm">
                 <h3 className="text-lg font-medium text-gray-900">Anti-Ragging Committee</h3>
                 <ul className="mt-4 space-y-3">
@@ -533,7 +534,7 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

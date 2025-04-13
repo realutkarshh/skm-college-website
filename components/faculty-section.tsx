@@ -6,14 +6,17 @@ import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Users, Award, BookOpen, Mail, Phone } from "lucide-react"
+import DoctorImage1 from "/public/doctor-image1.png"
+import DoctorImage2 from "/public/doctor-image2.jpg"
+import DoctorImage3 from "/public/doctor-image3.png"
 
 const facultyMembers = [
   {
     id: 1,
-    name: "Dr. Priya Sharma",
+    name: "Dr. Sharma",
     position: "Principal & Professor",
     department: "Administration",
-    image: "/placeholder.svg?height=300&width=300&text=Dr.+Priya+Sharma",
+    image: DoctorImage1,
     education: "Ph.D. in Nursing, M.Sc. Nursing",
     experience: "25+ years in nursing education and administration",
     specialization: "Nursing Administration, Community Health Nursing",
@@ -23,10 +26,10 @@ const facultyMembers = [
   },
   {
     id: 2,
-    name: "Dr. Rajesh Kumar",
+    name: "Dr. Kumar",
     position: "Professor & HOD",
     department: "Medical-Surgical Nursing",
-    image: "/placeholder.svg?height=300&width=300&text=Dr.+Rajesh+Kumar",
+    image: DoctorImage2,
     education: "Ph.D. in Nursing, M.Sc. Nursing (Medical-Surgical)",
     experience: "20+ years in clinical and teaching experience",
     specialization: "Critical Care Nursing, Cardiovascular Nursing",
@@ -36,10 +39,10 @@ const facultyMembers = [
   },
   {
     id: 3,
-    name: "Prof. Meena Patel",
+    name: "Prof. Patel",
     position: "Associate Professor",
     department: "Obstetrics & Gynecological Nursing",
-    image: "/placeholder.svg?height=300&width=300&text=Prof.+Meena+Patel",
+    image: DoctorImage3,
     education: "M.Sc. Nursing (OBG), PG Diploma in Healthcare Management",
     experience: "18 years of clinical and teaching experience",
     specialization: "Maternal and Child Health, High-Risk Pregnancy Care",
@@ -49,10 +52,10 @@ const facultyMembers = [
   },
   {
     id: 4,
-    name: "Dr. Anand Singh",
+    name: "Dr. Singh",
     position: "Associate Professor",
     department: "Psychiatric Nursing",
-    image: "/placeholder.svg?height=300&width=300&text=Dr.+Anand+Singh",
+    image: DoctorImage1,
     education: "Ph.D. in Psychiatric Nursing, M.Sc. Nursing",
     experience: "15+ years in mental health nursing",
     specialization: "Addiction Nursing, Crisis Intervention",
@@ -62,10 +65,10 @@ const facultyMembers = [
   },
   {
     id: 5,
-    name: "Prof. Sunita Verma",
+    name: "Prof. Verma",
     position: "Assistant Professor",
     department: "Community Health Nursing",
-    image: "/placeholder.svg?height=300&width=300&text=Prof.+Sunita+Verma",
+    image: DoctorImage2,
     education: "M.Sc. Nursing (Community Health), MPH",
     experience: "12 years in public health and teaching",
     specialization: "Epidemiology, Rural Health",
@@ -75,10 +78,10 @@ const facultyMembers = [
   },
   {
     id: 6,
-    name: "Prof. Vikram Mehta",
+    name: "Prof. Mehta",
     position: "Assistant Professor",
     department: "Child Health Nursing",
-    image: "/placeholder.svg?height=300&width=300&text=Prof.+Vikram+Mehta",
+    image: DoctorImage3,
     education: "M.Sc. Nursing (Pediatrics), Specialized in Neonatal Care",
     experience: "10 years in pediatric nursing and education",
     specialization: "Neonatal Intensive Care, Pediatric Oncology",

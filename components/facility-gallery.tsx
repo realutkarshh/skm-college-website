@@ -3,6 +3,11 @@
 import { useState } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight, X } from "lucide-react"
+import LabImage1 from "../public/lab-1.jpeg"
+import LabImage2 from "../public/lab-2.jpeg"
+import BuildingImage1 from "../public/building-image1.jpeg"
+import BuildingImage2 from "../public/building-image2.jpeg"
+import LibraryImage1 from "../public/library-image1.jpg"
 
 interface FacilityGalleryProps {
   type: "buildings" | "labs" | "library"
@@ -16,12 +21,12 @@ export default function FacilityGallery({ type }: FacilityGalleryProps) {
   const images = {
     buildings: [
       {
-        src: "/placeholder.svg?height=400&width=600&text=Academic Building",
+        src: BuildingImage1,
         alt: "Academic Building",
         caption: "Main Academic Building with modern classrooms and lecture halls",
       },
       {
-        src: "/placeholder.svg?height=400&width=600&text=Administrative Block",
+        src: BuildingImage2,
         alt: "Administrative Block",
         caption: "Administrative Block housing offices and meeting rooms",
       },
@@ -38,12 +43,12 @@ export default function FacilityGallery({ type }: FacilityGalleryProps) {
     ],
     labs: [
       {
-        src: "/placeholder.svg?height=400&width=600&text=Simulation Lab",
+        src: LabImage1,
         alt: "Simulation Lab",
         caption: "Advanced simulation lab with high-fidelity mannequins",
       },
       {
-        src: "/placeholder.svg?height=400&width=600&text=Anatomy Lab",
+        src: LabImage2,
         alt: "Anatomy Lab",
         caption: "Well-equipped anatomy and physiology laboratory",
       },
@@ -60,7 +65,7 @@ export default function FacilityGallery({ type }: FacilityGalleryProps) {
     ],
     library: [
       {
-        src: "/placeholder.svg?height=400&width=600&text=Main Library",
+        src: LibraryImage1,
         alt: "Main Library",
         caption: "Spacious main library with thousands of books and journals",
       },

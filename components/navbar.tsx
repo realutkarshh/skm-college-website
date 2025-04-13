@@ -1,29 +1,34 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { usePathname } from "next/navigation"
-import { Menu, X, ChevronDown } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import Logo from "../public/college-logo.jpg"
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import Logo from "../public/college-logo.jpg";
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const pathname = usePathname()
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const closeMenu = () => {
-    setIsMenuOpen(false)
-  }
+    setIsMenuOpen(false);
+  };
 
   const isActive = (path: string) => {
-    return pathname === path
-  }
+    return pathname === path;
+  };
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -33,7 +38,7 @@ export default function Navbar() {
     { name: "Courses", href: "/#academics" },
     { name: "Fee Structure", href: "/fee-structure" },
     { name: "Contact", href: "/contact" },
-  ]
+  ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
@@ -46,7 +51,9 @@ export default function Navbar() {
             height={50}
             className="rounded-md"
           />
-          <span className="hidden font-bold text-gray-900 md:inline-block">S.K.M. College of Nursing & Paramedical</span>
+          <span className="hidden font-bold text-gray-900 md:inline-block">
+            S.K.M. College of <br /> Nursing & Paramedical
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -64,22 +71,25 @@ export default function Navbar() {
           ))}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="flex items-center gap-1 text-sm font-medium text-gray-600">
+              <Button
+                variant="ghost"
+                className="flex items-center gap-1 text-sm font-medium text-gray-600"
+              >
                 Quick Links
                 <ChevronDown className="h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              <DropdownMenuItem asChild>
+              {/* <DropdownMenuItem asChild>
                 <Link href="/contact#admission-form" className="w-full cursor-pointer">
                   Apply Now
                 </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
+              </DropdownMenuItem> */}
+              {/* <DropdownMenuItem asChild>
                 <Link href="/#news" className="w-full cursor-pointer">
                   News & Events
                 </Link>
-              </DropdownMenuItem>
+              </DropdownMenuItem> */}
               <DropdownMenuItem asChild>
                 <Link href="/#anti-ragging" className="w-full cursor-pointer">
                   Anti-Ragging
@@ -98,8 +108,18 @@ export default function Navbar() {
         </nav>
 
         {/* Mobile Menu Button */}
-        <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMenu} aria-label="Toggle menu">
-          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="md:hidden"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
         </Button>
       </div>
 
@@ -130,5 +150,5 @@ export default function Navbar() {
         </div>
       )}
     </header>
-  )
+  );
 }

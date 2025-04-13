@@ -148,7 +148,7 @@ export default function FeeStructurePage() {
               </p>
             </div>
 
-            <div className="rounded-lg bg-white p-6 shadow-md">
+            {/* <div className="rounded-lg bg-white p-6 shadow-md">
               <div className="flex items-center gap-4">
                 <div className="rounded-full bg-teal-100 p-3">
                   <IndianRupee className="h-6 w-6 text-teal-600" />
@@ -212,7 +212,7 @@ export default function FeeStructurePage() {
                   <span>₹500</span>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

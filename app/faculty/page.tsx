@@ -69,7 +69,7 @@ export default function FacultyPage() {
       </section>
 
       {/* Faculty Achievements Section */}
-      <section className="bg-white py-16 sm:py-24">
+      {/* <section className="bg-white py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Faculty Achievements</h2>
@@ -135,7 +135,7 @@ export default function FacultyPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   )
 }

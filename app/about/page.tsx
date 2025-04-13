@@ -1,6 +1,10 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ChevronRight, Award, Users, BookOpen, Clock, MapPin } from "lucide-react"
+import OurStoryImage from "/public/our-story.jpeg"
+import DoctorImage1 from "/public/doctor-image1.png"
+import DoctorImage2 from "/public/doctor-image2.jpg"
+import DoctorImage3 from "/public/doctor-image3.png"
 
 export default function AboutPage() {
   return (
@@ -11,7 +15,7 @@ export default function AboutPage() {
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">About Us</h1>
             <p className="mt-4 text-lg text-gray-600">
-              Learn more about Modern Nursing Institute, our history, mission, and commitment to excellence in nursing
+              Learn more about S.K.M. College of Nursing & Paramedical, our history, mission, and commitment to excellence in nursing
               education.
             </p>
           </div>
@@ -31,8 +35,7 @@ export default function AboutPage() {
               </p>
               <p className="mt-4 text-lg text-gray-600">
                 Our institute was founded by a group of healthcare professionals and educators who recognized the need
-                for well-trained nursing professionals in the healthcare sector. Starting with just 30 students in our
-                first batch, we now admit over 120 students annually across various nursing programs.
+                for well-trained nursing professionals in the healthcare sector. We now admit over 180 students annually across various nursing programs.
               </p>
               <p className="mt-4 text-lg text-gray-600">
                 We take pride in our alumni who are serving in prestigious healthcare institutions across India and
@@ -42,8 +45,8 @@ export default function AboutPage() {
             <div className="order-first lg:order-last">
               <div className="relative h-full overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=Institute+Building"
-                  alt="Modern Nursing Institute Building"
+                  src={OurStoryImage}
+                  alt="S.K.M. College of Nursing & Paramedical Institute Building"
                   width={800}
                   height={600}
                   className="h-full w-full object-cover"
@@ -112,7 +115,7 @@ export default function AboutPage() {
                 To be recognized as a center of excellence in nursing education, research, and practice, producing
                 leaders who transform healthcare delivery and improve patient outcomes.
               </p>
-              <p className="mt-4 text-gray-600">We envision Modern Nursing Institute as:</p>
+              <p className="mt-4 text-gray-600">We envision S.K.M. College of Nursing & Paramedical Institute as:</p>
               <ul className="mt-4 space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
@@ -230,14 +233,14 @@ export default function AboutPage() {
             <div className="rounded-lg bg-white p-6 shadow-md text-center">
               <div className="mx-auto h-32 w-32 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=128&width=128&text=Dr.+Priya+Sharma"
+                  src={DoctorImage2}
                   alt="Dr. Priya Sharma"
                   width={128}
                   height={128}
                   className="h-full w-full object-cover"
                 />
               </div>
-              <h3 className="mt-4 text-xl font-bold text-gray-900">Dr. Priya Sharma</h3>
+              <h3 className="mt-4 text-xl font-bold text-gray-900">Dr. Sharma</h3>
               <p className="text-teal-600">Principal & Director</p>
               <p className="mt-2 text-sm text-gray-600">
                 Ph.D. in Nursing, M.Sc. Nursing with 25+ years of experience in nursing education and administration.
@@ -247,14 +250,14 @@ export default function AboutPage() {
             <div className="rounded-lg bg-white p-6 shadow-md text-center">
               <div className="mx-auto h-32 w-32 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=128&width=128&text=Dr.+Rajesh+Kumar"
+                  src={DoctorImage1}
                   alt="Dr. Rajesh Kumar"
                   width={128}
                   height={128}
                   className="h-full w-full object-cover"
                 />
               </div>
-              <h3 className="mt-4 text-xl font-bold text-gray-900">Dr. Rajesh Kumar</h3>
+              <h3 className="mt-4 text-xl font-bold text-gray-900">Dr. Kumar</h3>
               <p className="text-teal-600">Vice Principal & Dean of Academics</p>
               <p className="mt-2 text-sm text-gray-600">
                 Ph.D. in Nursing, M.Sc. Nursing (Medical-Surgical) with expertise in curriculum development and academic
@@ -265,14 +268,14 @@ export default function AboutPage() {
             <div className="rounded-lg bg-white p-6 shadow-md text-center">
               <div className="mx-auto h-32 w-32 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=128&width=128&text=Dr.+Anand+Singh"
+                  src={DoctorImage3}
                   alt="Dr. Anand Singh"
                   width={128}
                   height={128}
                   className="h-full w-full object-cover"
                 />
               </div>
-              <h3 className="mt-4 text-xl font-bold text-gray-900">Dr. Anand Singh</h3>
+              <h3 className="mt-4 text-xl font-bold text-gray-900">Dr. Singh</h3>
               <p className="text-teal-600">Dean of Research & Development</p>
               <p className="mt-2 text-sm text-gray-600">
                 Ph.D. in Psychiatric Nursing with a strong background in healthcare research and innovation.
@@ -303,26 +306,26 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold text-gray-900">Our Location</h3>
               </div>
               <p className="mt-4 text-gray-600">
-                Modern Nursing Institute is strategically located in the heart of Patna, making it easily accessible
+                S.K.M. College of Nursing & Paramedical Institute is located in Dadhi Pakaria, Shambhu Ganj, Banka, Bihar, making it easily accessible
                 from all parts of the city. Our campus is situated in a peaceful environment conducive to learning, yet
-                close to major hospitals and healthcare facilities where our students gain practical experience.
+                close to hospitals and healthcare facilities where our students gain practical experience.
               </p>
               <p className="mt-4 text-gray-600">
-                The campus is well-connected by public transportation, with bus stops and auto stands nearby. For
-                students coming from other cities, the railway station and bus terminal are just a short distance away.
+                The campus is well-connected by public transportation.
               </p>
               <div className="mt-6">
                 <h4 className="font-medium text-gray-900">Address:</h4>
-                <p className="text-gray-600">123 Medical Campus Road, Patna, Bihar - 800001</p>
-                <p className="mt-2 text-gray-600">
+                <p className="text-gray-600">Dadhi Pakaria, Shambhu Ganj,
+                Banka, Bihar- 813211.</p>
+                {/* <p className="mt-2 text-gray-600">
                   <span className="font-medium">Landmarks:</span> Near City Hospital, 2 km from Gandhi Maidan
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="h-96 overflow-hidden rounded-lg shadow-md">
               <iframe
                 title="College Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115132.86107261921!2d85.07300207866864!3d25.608175570313985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937c52d4f05%3A0x831a0e05f607b270!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1712912903!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.6887087100554!2d86.70869217483252!3d25.044636137864174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f1a5254a52359d%3A0x87d532001c3d0779!2sSKM%20EDUCATION%2C%20DADHI%20PAKARIA!5e0!3m2!1sen!2sin!4v1744475867093!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -341,7 +344,7 @@ export default function AboutPage() {
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">Begin Your Nursing Journey With Us</h2>
             <p className="mt-4 text-lg text-gray-600">
-              Take the first step towards a rewarding career in healthcare by joining Modern Nursing Institute.
+              Take the first step towards a rewarding career in healthcare by joining S.K.M. College of Nursing & Paramedical Institute.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link

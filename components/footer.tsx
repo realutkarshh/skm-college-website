@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <Image
                 src={Logo}
-                alt="Modern Nursing Institute"
+                alt="S.K.M. College of Nursing & Paramedical"
                 width={125}
                 height={125}
                 className="rounded-md"
@@ -97,28 +97,24 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold">Programs</h3>
+            <h3 className="text-lg font-semibold">Courses</h3>
             <ul className="mt-4 space-y-2">
               <li>
                 <Link href="/#academics" className="text-sm text-gray-400 hover:text-teal-400">
-                  B.Sc. Nursing (4 Years)
+                  Degree in B.Sc. Nursing (4 Years)
                 </Link>
               </li>
               <li>
                 <Link href="/#academics" className="text-sm text-gray-400 hover:text-teal-400">
-                  GNM - General Nursing & Midwifery (3 Years)
+                    Diploma in GNM (3 Years)
                 </Link>
               </li>
               <li>
                 <Link href="/#academics" className="text-sm text-gray-400 hover:text-teal-400">
-                  Post Basic B.Sc. Nursing (2 Years)
+                  Diploma in ANM (2 Years)
                 </Link>
               </li>
-              <li>
-                <Link href="/#academics" className="text-sm text-gray-400 hover:text-teal-400">
-                  M.Sc. Nursing (2 Years)
-                </Link>
-              </li>
+              
             </ul>
           </div>
 
@@ -127,22 +123,23 @@ export default function Footer() {
             <ul className="mt-4 space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-teal-400" />
-                <span className="text-sm text-gray-400">123 Medical Campus Road, Patna, Bihar - 800001</span>
+                <span className="text-sm text-gray-400">Dadhi Pakaria, Shambhu Ganj,
+                Banka, Bihar- 813211.</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-teal-400" />
                 <span className="text-sm text-gray-400">
-                  +91 9876543210 (Admissions)
+                +91 9955932207, 6205781139, 9910068341(Admissions)
                   <br />
-                  +91 9876543211 (General)
+                  +91 6205781139 (General)
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-teal-400" />
                 <span className="text-sm text-gray-400">
-                  admissions@modernnursing.edu
+                skmpakaria@gmail.com
                   <br />
-                  info@modernnursing.edu
+                  principal.skmcnp@gmail.com
                 </span>
               </li>
             </ul>
@@ -152,9 +149,9 @@ export default function Footer() {
         <div className="mt-12 border-t border-gray-800 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Modern Nursing Institute. All rights reserved.
+              © {new Date().getFullYear()} S.K.M. College of Nursing & Paramedical. All rights reserved.
             </p>
-            <div className="flex space-x-6">
+            {/* <div className="flex space-x-6">
               <Link href="/privacy-policy" className="text-xs text-gray-400 hover:text-teal-400">
                 Privacy Policy
               </Link>
@@ -164,7 +161,7 @@ export default function Footer() {
               <Link href="/sitemap" className="text-xs text-gray-400 hover:text-teal-400">
                 Sitemap
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
