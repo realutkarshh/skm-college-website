@@ -25,18 +25,20 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-white">
         <div className="absolute inset-0 bg-gradient-to-r from-teal-50 to-teal-100 clip-hero-shape" />
-        <div className="container relative mx-auto px-4 py-24 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+        <div className="container relative mx-auto px-4 py-8 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8 lg:py-24">
           <div className="max-w-xl text-center sm:text-left">
             <div className="relative">
               <div className="inline-block rounded-lg bg-teal-100 px-3 py-1 text-sm font-medium text-teal-800 mb-6 animate-fade-in-up">
                 Excellence in Nursing Education
               </div>
+
               <h1 className="text-3xl font-extrabold sm:text-5xl lg:text-6xl animate-fade-in-up animation-delay-200">
                 S.K.M. College of
                 <span className="block text-teal-700 mt-1">
                   Nursing & Paramedical
                 </span>
               </h1>
+
               <p className="mt-4 max-w-lg sm:text-xl/relaxed text-gray-700 animate-fade-in-up animation-delay-400">
                 Shaping compassionate healthcare professionals through quality
                 education, practical training, and ethical values.
@@ -59,8 +61,8 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <br />
-          <div className="w-full animate-fade-in-right lg:w-1/2">
+
+          <div className="w-full mt-8 lg:mt-0 animate-fade-in-right lg:w-1/2">
             <Image
               src={HeroImage}
               alt="Nursing students"
