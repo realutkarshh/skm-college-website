@@ -155,7 +155,7 @@ export default function PlacementsPage() {
                 </div>
               </div>
               <p className="mt-4 text-gray-600">
-                "The clinical exposure and simulation training at Modern Nursing Institute prepared me exceptionally
+                "The clinical exposure and simulation training at S.K.M. College of Nursing & Paramedical prepared me exceptionally
                 well for my role in the critical care unit. The faculty's guidance and mentorship were instrumental in
                 my success."
               </p>

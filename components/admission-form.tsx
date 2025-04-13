@@ -189,7 +189,7 @@ export default function AdmissionForm() {
         </div>
         <h3 className="mt-4 text-lg font-medium text-teal-800">Application Submitted Successfully!</h3>
         <p className="mt-2 text-teal-700">
-          Thank you for applying to Modern Nursing Institute. Your application has been received and is being processed.
+          Thank you for applying to S.K.M. College of Nursing & Paramedical. Your application has been received and is being processed.
           You will receive a confirmation email shortly with further instructions.
         </p>
         <p className="mt-4 text-teal-700">
@@ -602,7 +602,7 @@ export default function AdmissionForm() {
                     />
                     <div>
                       <Label htmlFor="agreeToTerms" className="text-sm">
-                        I agree to the terms and conditions of Modern Nursing Institute, including the fee structure,
+                        I agree to the terms and conditions of S.K.M. College of Nursing & Paramedical, including the fee structure,
                         admission policies, and code of conduct. <span className="text-red-500">*</span>
                       </Label>
                       {errors.agreeToTerms && <p className="text-sm text-red-500">{errors.agreeToTerms}</p>}

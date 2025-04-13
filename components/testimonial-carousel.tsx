@@ -11,7 +11,7 @@ const testimonials = [
     role: "B.Sc. Nursing Graduate, 2024",
     image: "/placeholder.svg?height=80&width=80",
     content:
-      "My four years at Modern Nursing Institute were transformative. The faculty's dedication and hands-on clinical experience prepared me well for my career. I secured a position at AIIMS Delhi even before graduation.",
+      "My four years at S.K.M. College of Nursing & Paramedical were transformative. The faculty's dedication and hands-on clinical experience prepared me well for my career. I secured a position at AIIMS Delhi even before graduation.",
   },
   {
     id: 2,

@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "S.K.M. College of Nursing & Paramedical",
   description:
-    "Modern Nursing Institute - Shaping compassionate healthcare professionals through quality education, practical training, and ethical values.",
+    "S.K.M. College of Nursing & Paramedical - Shaping compassionate healthcare professionals through quality education, practical training, and ethical values.",
     generator: 'v0.dev'
 }
 

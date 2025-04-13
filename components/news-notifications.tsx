@@ -12,7 +12,7 @@ const newsItems = [
     date: "April 10, 2025",
     category: "academics",
     excerpt:
-      "Modern Nursing Institute is proud to announce a new specialization in Critical Care Nursing for our M.Sc. Nursing program starting from the upcoming academic session.",
+      "S.K.M. College of Nursing & Paramedical is proud to announce a new specialization in Critical Care Nursing for our M.Sc. Nursing program starting from the upcoming academic session.",
     link: "#",
   },
   {
@@ -39,7 +39,7 @@ const newsItems = [
     date: "March 15, 2025",
     category: "placements",
     excerpt:
-      "Modern Nursing Institute has signed a Memorandum of Understanding with a leading hospital chain to provide enhanced clinical training and placement opportunities.",
+      "S.K.M. College of Nursing & Paramedical has signed a Memorandum of Understanding with a leading hospital chain to provide enhanced clinical training and placement opportunities.",
     link: "#",
   },
   {
@@ -57,7 +57,7 @@ const newsItems = [
     date: "February 28, 2025",
     category: "events",
     excerpt:
-      "Modern Nursing Institute will host the National Nursing Conference 2025 on 'Innovations in Nursing Practice' from May 15-17, 2025.",
+      "S.K.M. College of Nursing & Paramedical will host the National Nursing Conference 2025 on 'Innovations in Nursing Practice' from May 15-17, 2025.",
     link: "#",
   },
 ]

@@ -344,7 +344,7 @@ export default function AboutPage() {
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">Begin Your Nursing Journey With Us</h2>
             <p className="mt-4 text-lg text-gray-600">
-              Take the first step towards a rewarding career in healthcare by joining S.K.M. College of Nursing & Paramedical Institute.
+              Take the first step towards a rewarding career in healthcare by joining S.K.M. College of Nursing & Paramedical.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link

@@ -12,7 +12,7 @@ export default function AffiliationsPage() {
               Affiliations & Accreditations
             </h1>
             <p className="mt-4 text-lg text-gray-600">
-              Modern Nursing Institute is recognized by leading educational and professional bodies, ensuring quality
+              S.K.M. College of Nursing & Paramedical is recognized by leading educational and professional bodies, ensuring quality
               education and valid certification.
             </p>
           </div>
@@ -25,8 +25,7 @@ export default function AffiliationsPage() {
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Our Certifications</h2>
             <p className="mt-4 text-lg text-gray-600">
-              View our latest affiliation certificates, including University Affiliation Letter, AICTE approval, NBA
-              accreditation, NAAC accreditation, NIRF ranking, and other relevant certifications.
+              View our latest affiliation certificates, including University Affiliation Letter and other relevant certifications.
             </p>
           </div>
 
