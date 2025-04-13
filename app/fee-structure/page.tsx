@@ -233,7 +233,7 @@ export default function FeeStructurePage() {
               <p className="mt-2 text-gray-600">Fees can be paid through any of the following methods:</p>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-gray-600">
                 {/* <li>Online payment through the institute's portal</li> */}
-                <li>Demand Draft in favor of "S.K.M. College of Nursing & Paramedical Institute" payable at Shambhu Ganj</li>
+                <li>Demand Draft in favor of "S.K.M. College of Nursing & Paramedical " payable at Shambhu Ganj</li>
                 <li>NEFT/RTGS/UPI transfer to the institute's bank account</li>
                 {/* <li>Debit/Credit Card payment at the institute's accounts office</li> */}
               </ul>
