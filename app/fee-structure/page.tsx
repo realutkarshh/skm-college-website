@@ -232,14 +232,14 @@ export default function FeeStructurePage() {
               <h3 className="text-xl font-bold text-gray-900">Payment Methods</h3>
               <p className="mt-2 text-gray-600">Fees can be paid through any of the following methods:</p>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-gray-600">
-                <li>Online payment through the institute's portal</li>
-                <li>Demand Draft in favor of "Modern Nursing Institute" payable at Patna</li>
-                <li>NEFT/RTGS transfer to the institute's bank account</li>
-                <li>Debit/Credit Card payment at the institute's accounts office</li>
+                {/* <li>Online payment through the institute's portal</li> */}
+                <li>Demand Draft in favor of "S.K.M. College of Nursing & Paramedical Institute" payable at Shambhu Ganj</li>
+                <li>NEFT/RTGS/UPI transfer to the institute's bank account</li>
+                {/* <li>Debit/Credit Card payment at the institute's accounts office</li> */}
               </ul>
             </div>
 
-            <div className="rounded-lg bg-white p-6 shadow-md">
+            {/* <div className="rounded-lg bg-white p-6 shadow-md">
               <h3 className="text-xl font-bold text-gray-900">Installment Plans</h3>
               <p className="mt-2 text-gray-600">Students can opt for installment plans to pay their fees:</p>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-gray-600">
@@ -252,7 +252,7 @@ export default function FeeStructurePage() {
                 <strong>Note:</strong> Installment plans are available only for tuition fees. Hostel fees and other
                 charges must be paid in full at the beginning of the academic year.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -297,11 +297,11 @@ export default function FeeStructurePage() {
               <h3 className="text-xl font-bold text-gray-900">Government Schemes</h3>
               <p className="mt-2 text-gray-600">We facilitate access to various government scholarship schemes:</p>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-gray-600">
-                <li>Post-Matric Scholarship for SC/ST students</li>
+                {/* <li>Post-Matric Scholarship for SC/ST students</li> */}
                 <li>Bihar Student Credit Card Scheme</li>
-                <li>Central Sector Scholarship Scheme</li>
+                {/* <li>Central Sector Scholarship Scheme</li>
                 <li>Minority Scholarship Schemes</li>
-                <li>Other state and central government scholarships</li>
+                <li>Other state and central government scholarships</li> */}
               </ul>
             </div>
           </div>
