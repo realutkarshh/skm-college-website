@@ -140,46 +140,93 @@ export default function AdmissionForm() {
     window.scrollTo(0, 0)
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+  
     if (!validateStep(step)) {
-      return
+      return;
     }
-
-    setIsSubmitting(true)
-
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setIsSubmitted(true)
-
-      // Reset form after submission
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        dob: "",
-        gender: "",
-        address: "",
-        city: "",
-        state: "",
-        pincode: "",
-        program: "",
-        qualification: "",
-        school: "",
-        board: "",
-        passingYear: "",
-        percentage: "",
-        hostelRequired: false,
-        howDidYouHear: "",
-        questions: "",
-        agreeToTerms: false,
-        confirmInformation: false,
-      })
-    }, 1500)
-  }
+  
+    setIsSubmitting(true);
+  
+    try {
+      // Prepare data to send to SheetDB
+      const payload = {
+        data: {
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          dob: formData.dob,
+          gender: formData.gender,
+          address: formData.address,
+          city: formData.city,
+          state: formData.state,
+          pincode: formData.pincode,
+          program: formData.program,
+          qualification: formData.qualification,
+          school: formData.school,
+          board: formData.board,
+          passingYear: formData.passingYear,
+          percentage: formData.percentage,
+          hostelRequired: formData.hostelRequired ? "Yes" : "No",
+          howDidYouHear: formData.howDidYouHear,
+          questions: formData.questions,
+          agreeToTerms: formData.agreeToTerms ? "Yes" : "No",
+          confirmInformation: formData.confirmInformation ? "Yes" : "No",
+        }
+      };
+  
+      // Replace this with your SheetDB API URL
+      const response = await fetch('https://sheetdb.io/api/v1/0d68vw1zs305f', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+  
+      if (response.ok) {
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+  
+        // Reset form after successful submission
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          dob: "",
+          gender: "",
+          address: "",
+          city: "",
+          state: "",
+          pincode: "",
+          program: "",
+          qualification: "",
+          school: "",
+          board: "",
+          passingYear: "",
+          percentage: "",
+          hostelRequired: false,
+          howDidYouHear: "",
+          questions: "",
+          agreeToTerms: false,
+          confirmInformation: false,
+        });
+  
+        alert("Form submitted successfully!");
+      } else {
+        setIsSubmitting(false);
+        alert("Failed to submit the form. Please try again.");
+      }
+    } catch (error) {
+      setIsSubmitting(false);
+      console.error("Error submitting form:", error);
+      alert("Something went wrong. Please try again later.");
+    }
+  };
+  
 
   if (isSubmitted) {
     return (
