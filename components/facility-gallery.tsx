@@ -5,9 +5,16 @@ import Image from "next/image"
 import { ChevronLeft, ChevronRight, X } from "lucide-react"
 import LabImage1 from "../public/lab-1.jpeg"
 import LabImage2 from "../public/lab-2.jpeg"
+import LabImage3 from "../public/lab-3.jpg"
+import LabImage4 from "../public/lab-4.jpg"
 import BuildingImage1 from "../public/building-image1.jpeg"
 import BuildingImage2 from "../public/building-image2.jpeg"
+import BuildingImage3 from "../public/building-image3.jpg"
 import LibraryImage1 from "../public/library-image1.jpg"
+import LibraryImage2 from "../public/library-image2.jpg"
+import LibraryImage3 from "../public/library-image3.jpg"
+import LibraryImage4 from "../public/library-image4.jpg"
+
 
 interface FacilityGalleryProps {
   type: "buildings" | "labs" | "library"
@@ -31,9 +38,9 @@ export default function FacilityGallery({ type }: FacilityGalleryProps) {
         caption: "Administrative Block housing offices and meeting rooms",
       },
       {
-        src: "/placeholder.svg?height=400&width=600&text=Student Center",
+        src: BuildingImage3,
         alt: "Student Center",
-        caption: "Student Center with cafeteria and recreational facilities",
+        caption: "Classroom for Students",
       },
       {
         src: "/placeholder.svg?height=400&width=600&text=Hostel Building",
@@ -53,12 +60,12 @@ export default function FacilityGallery({ type }: FacilityGalleryProps) {
         caption: "Well-equipped anatomy and physiology laboratory",
       },
       {
-        src: "/placeholder.svg?height=400&width=600&text=Computer Lab",
+        src: LabImage3,
         alt: "Computer Lab",
         caption: "Computer lab with nursing informatics resources",
       },
       {
-        src: "/placeholder.svg?height=400&width=600&text=Skills Lab",
+        src: LabImage4,
         alt: "Skills Lab",
         caption: "Nursing skills lab for practical training",
       },
@@ -70,17 +77,17 @@ export default function FacilityGallery({ type }: FacilityGalleryProps) {
         caption: "Spacious main library with thousands of books and journals",
       },
       {
-        src: "/placeholder.svg?height=400&width=600&text=Digital Library",
+        src: LibraryImage2,
         alt: "Digital Library",
         caption: "Digital library with access to online databases and resources",
       },
       {
-        src: "/placeholder.svg?height=400&width=600&text=Reading Area",
+        src: LibraryImage3,
         alt: "Reading Area",
         caption: "Quiet reading and study areas for students",
       },
       {
-        src: "/placeholder.svg?height=400&width=600&text=Group Study Rooms",
+        src: LibraryImage4,
         alt: "Group Study Rooms",
         caption: "Collaborative study spaces for group discussions",
       },
