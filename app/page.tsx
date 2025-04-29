@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 import {
   ChevronRight,
   MapPin,
@@ -13,63 +13,62 @@ import {
   Users,
   Bell,
   Shield,
-} from "lucide-react";
-import TestimonialCarousel from "@/components/testimonial-carousel";
-import NewsNotifications from "@/components/news-notifications";
-import FacilityGallery from "@/components/facility-gallery";
-import HeroImage from "../public/hero-main.jpeg";
+} from "lucide-react"
+import NewsNotifications from "@/components/news-notifications"
+import FacilityGallery from "@/components/facility-gallery"
+import ImageCarousel from "@/components/image-carousel"
+import HeroImage from "../public/hero-main.jpeg"
 
 export default function Home() {
   return (
     <>
+
+    
       {/* Hero Section */}
       <section className="relative bg-white">
-        <div className="absolute inset-0 bg-gradient-to-r from-teal-50 to-teal-100 clip-hero-shape" />
-        <div className="container relative mx-auto px-4 py-8 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8 lg:py-24">
-          <div className="max-w-xl text-center sm:text-left">
-            <div className="relative">
-              <div className="inline-block rounded-lg bg-teal-100 px-3 py-1 text-sm font-medium text-teal-800 mb-6 animate-fade-in-up">
-                Excellence in Nursing Education
+        <div className="relative h-screen max-h-[800px] w-full overflow-hidden">
+          <ImageCarousel
+            images={[
+              { src: HeroImage.src, alt: "Nursing students in classroom" },
+              { src: HeroImage.src, alt: "Nursing simulation lab" },
+              { src: HeroImage.src, alt: "College campus" },
+              { src: HeroImage.src, alt: "Students in clinical practice" },
+            ]}
+          />
+          <div className="container relative mx-auto px-4 py-8 sm:px-6 lg:flex lg:h-screen lg:max-h-[800px] lg:items-center lg:px-8 lg:py-24">
+            <div className="max-w-xl text-center sm:text-left z-10">
+              <div className="relative">
+                <div className="inline-block rounded-lg bg-teal-100 px-3 py-1 text-sm font-medium text-teal-800 mb-6 animate-fade-in-up">
+                  Excellence in Nursing Education
+                </div>
+
+                <h1 className="text-3xl font-extrabold sm:text-5xl lg:text-6xl animate-fade-in-up animation-delay-200 text-white">
+                  S.K.M. College of
+                  <span className="block text-teal-300 mt-1">Nursing & Paramedical</span>
+                </h1>
+
+                <p className="mt-4 max-w-lg sm:text-xl/relaxed text-gray-100 animate-fade-in-up animation-delay-400">
+                  Shaping compassionate healthcare professionals through quality education, practical training, and
+                  ethical values.
+                </p>
               </div>
 
-              <h1 className="text-3xl font-extrabold sm:text-5xl lg:text-6xl animate-fade-in-up animation-delay-200">
-                S.K.M. College of
-                <span className="block text-teal-700 mt-1">
-                  Nursing & Paramedical
-                </span>
-              </h1>
+              <div className="mt-8 flex flex-wrap gap-4 text-center animate-fade-in-up animation-delay-600">
+                <Link
+                  href="/contact#admission-form"
+                  className="block w-full rounded bg-teal-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-teal-700 focus:outline-none focus:ring sm:w-auto"
+                >
+                  Apply Now
+                </Link>
 
-              <p className="mt-4 max-w-lg sm:text-xl/relaxed text-gray-700 animate-fade-in-up animation-delay-400">
-                Shaping compassionate healthcare professionals through quality
-                education, practical training, and ethical values.
-              </p>
+                <Link
+                  href="/about"
+                  className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-teal-600 shadow hover:text-teal-700 focus:outline-none focus:ring sm:w-auto"
+                >
+                  Learn More
+                </Link>
+              </div>
             </div>
-
-            <div className="mt-8 flex flex-wrap gap-4 text-center animate-fade-in-up animation-delay-600">
-              <Link
-                href="/contact#admission-form"
-                className="block w-full rounded bg-teal-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-teal-700 focus:outline-none focus:ring sm:w-auto"
-              >
-                Apply Now
-              </Link>
-
-              <Link
-                href="/about"
-                className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-teal-600 shadow hover:text-teal-700 focus:outline-none focus:ring sm:w-auto"
-              >
-                Learn More
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-full mt-8 lg:mt-0 animate-fade-in-right lg:w-1/2">
-            <Image
-              src={HeroImage}
-              alt="Nursing students"
-              width={600}
-              height={600}
-              className="rounded-lg shadow-xl w-full h-auto"
-            />
           </div>
         </div>
       </section>
@@ -82,9 +81,8 @@ export default function Home() {
               About Our Institute
             </h2>
             <p className="mt-4 text-lg text-gray-600 animate-on-scroll animation-delay-200">
-              S.K.M. College of Nursing & Paramedical is dedicated to providing
-              high-quality education and training to aspiring nurses, preparing
-              them for successful careers in healthcare.
+              S.K.M. College of Nursing & Paramedical is dedicated to providing high-quality education and training to
+              aspiring nurses, preparing them for successful careers in healthcare.
             </p>
           </div>
 
@@ -93,12 +91,8 @@ export default function Home() {
               <div className="rounded-full bg-teal-100 p-3">
                 <MapPin className="h-6 w-6 text-teal-600" />
               </div>
-              <h3 className="mt-4 text-xl font-bold text-gray-900">
-                Our Location
-              </h3>
-              <p className="mt-2 text-gray-600">
-                Dadhi Pakaria, Shambhu Ganj, Banka, Bihar- 813211.
-              </p>
+              <h3 className="mt-4 text-xl font-bold text-gray-900">Our Location</h3>
+              <p className="mt-2 text-gray-600">Dadhi Pakaria, Shambhu Ganj, Banka, Bihar- 813211.</p>
               <div className="mt-4 h-64 w-full overflow-hidden rounded-lg">
                 <iframe
                   title="College Location"
@@ -117,12 +111,8 @@ export default function Home() {
               <div className="rounded-full bg-teal-100 p-3">
                 <Phone className="h-6 w-6 text-teal-600" />
               </div>
-              <h3 className="mt-4 text-xl font-bold text-gray-900">
-                Contact Details
-              </h3>
-              <p className="mt-2 text-gray-600">
-                We're here to answer your questions and provide guidance.
-              </p>
+              <h3 className="mt-4 text-xl font-bold text-gray-900">Contact Details</h3>
+              <p className="mt-2 text-gray-600">We're here to answer your questions and provide guidance.</p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-center gap-2">
                   <Phone className="h-4 w-4 text-teal-600" />
@@ -139,9 +129,7 @@ export default function Home() {
               </ul>
               <div className="mt-6">
                 <h4 className="font-medium text-gray-900">Working Hours:</h4>
-                <p className="text-gray-600">
-                  Monday - Saturday: 10:00 AM - 4:00 PM
-                </p>
+                <p className="text-gray-600">Monday - Saturday: 10:00 AM - 4:00 PM</p>
                 {/* <p className="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p> */}
               </div>
             </div>
@@ -150,13 +138,10 @@ export default function Home() {
               <div className="rounded-full bg-teal-100 p-3">
                 <Award className="h-6 w-6 text-teal-600" />
               </div>
-              <h3 className="mt-4 text-xl font-bold text-gray-900">
-                Our Mission
-              </h3>
+              <h3 className="mt-4 text-xl font-bold text-gray-900">Our Mission</h3>
               <p className="mt-2 text-gray-600">
-                To develop competent, compassionate, and ethical nursing
-                professionals who contribute to improving healthcare outcomes in
-                society.
+                To develop competent, compassionate, and ethical nursing professionals who contribute to improving
+                healthcare outcomes in society.
               </p>
               <h4 className="mt-4 font-medium text-gray-900">Our Values:</h4>
               <ul className="mt-2 list-disc pl-5 text-gray-600">
@@ -173,154 +158,99 @@ export default function Home() {
 
       {/* Academics Section */}
       <section id="academics" className="bg-white py-16 sm:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl animate-on-scroll">
-              Academic Excellence
-            </h2>
-            <p className="mt-4 text-lg text-gray-600 animate-on-scroll animation-delay-200">
-              Discover our comprehensive academic programs, experienced faculty,
-              and educational resources.
-            </p>
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-3xl text-center">
+      <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl animate-on-scroll">
+        Academic Excellence
+      </h2>
+      <p className="mt-4 text-lg text-gray-600 animate-on-scroll animation-delay-200">
+        Discover our comprehensive academic programs, experienced faculty, and educational resources.
+      </p>
+    </div>
+
+    <div className="mt-16 flex justify-center">
+      <div className="w-full max-w-7xl rounded-lg bg-white p-6 shadow-md animate-on-scroll">
+        <div className="flex items-center gap-4 mb-8">
+          <div className="rounded-full bg-teal-100 p-3">
+            <GraduationCap className="h-6 w-6 text-teal-600" />
+          </div>
+          <h3 className="text-2xl font-bold text-gray-900">Courses Offered</h3>
+        </div>
+
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {/** Card 1 */}
+          <div className="rounded-lg bg-white shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
+            <div className="relative h-48">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="B.Sc. Nursing"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-6">
+              <h4 className="font-medium text-gray-900 text-xl">B.Sc. Nursing (4 Years)</h4>
+              <p className="mt-2 text-gray-600">
+                Discover B.Sc Nursing Course at Nightingale Institute of Nursing
+              </p>
+              <Link
+                href="/contact#admission-form"
+                className="mt-4 inline-flex items-center text-teal-600 hover:text-teal-700"
+              >
+                Apply for admission <ChevronRight className="ml-1 h-4 w-4" />
+              </Link>
+            </div>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="rounded-lg bg-white p-6 shadow-md animate-on-scroll">
-              <div className="flex items-center gap-4">
-                <div className="rounded-full bg-teal-100 p-3">
-                  <GraduationCap className="h-6 w-6 text-teal-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900">
-                  Courses Offered
-                </h3>
-              </div>
-              <ul className="mt-6 space-y-4">
-                <li className="rounded-md bg-gray-50 p-4">
-                  <h4 className="font-medium text-gray-900">
-                    B.Sc. Nursing (4 Years)
-                  </h4>
-                  <p className="mt-1 text-sm text-gray-600">
-                    Discover B.Sc Nursing Course at Nightingale Institute of
-                    Nursing
-                  </p>
-                  <Link
-                    href="/contact#admission-form"
-                    className="mt-6 inline-flex items-center text-teal-600 hover:text-teal-700"
-                  >
-                    Apply for admission{" "}
-                    <ChevronRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </li>
-                <li className="rounded-md bg-gray-50 p-4">
-                  <h4 className="font-medium text-gray-900">
-                    Diploma in GNM (3 Years)
-                  </h4>
-                  <p className="mt-1 text-sm text-gray-600">
-                    Diploma in General Nursing skills and Midwifery.
-                  </p>
-                  <Link
-                    href="/contact#admission-form"
-                    className="mt-6 inline-flex items-center text-teal-600 hover:text-teal-700"
-                  >
-                    Apply for admission{" "}
-                    <ChevronRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </li>
-                <li className="rounded-md bg-gray-50 p-4">
-                  <h4 className="font-medium text-gray-900">
-                    Diploma in ANM (2 Years)
-                  </h4>
-                  <p className="mt-1 text-sm text-gray-600">
-                    Diploma in Auxiliary Nursing skills and Midwifery.
-                  </p>
-                  <Link
-                    href="/contact#admission-form"
-                    className="mt-6 inline-flex items-center text-teal-600 hover:text-teal-700"
-                  >
-                    Apply for admission{" "}
-                    <ChevronRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </li>
-                {/* <li className="rounded-md bg-gray-50 p-4">
-                  <h4 className="font-medium text-gray-900">M.Sc. Nursing (2 Years)</h4>
-                  <p className="mt-1 text-sm text-gray-600">
-                    Specialized postgraduate program with various specialization options.
-                  </p>
-                </li> */}
-              </ul>
+          {/** Card 2 */}
+          <div className="rounded-lg bg-white shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
+            <div className="relative h-48">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="GNM Course"
+                fill
+                className="object-cover"
+              />
             </div>
-
-            <div className="rounded-lg bg-white p-6 shadow-md animate-on-scroll animation-delay-200">
-              <div className="flex items-center gap-4">
-                <div className="rounded-full bg-teal-100 p-3">
-                  <Calendar className="h-6 w-6 text-teal-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900">
-                  Academic Calendar
-                </h3>
-              </div>
-              <div className="mt-6 space-y-4">
-                <div className="rounded-md bg-gray-50 p-4">
-                  <h4 className="font-medium text-gray-900">
-                    Admission Timeline
-                  </h4>
-                  <ul className="mt-2 space-y-2 text-sm text-gray-600">
-                    <li className="flex justify-between">
-                      <span>Application Opens:</span>
-                      <span>June 1, 2025</span>
-                    </li>
-                    <li className="flex justify-between">
-                      <span>Application Deadline:</span>
-                      <span>July 15, 2025</span>
-                    </li>
-                    <li className="flex justify-between">
-                      <span>Entrance Examination:</span>
-                      <span>July 30, 2025</span>
-                    </li>
-                    <li className="flex justify-between">
-                      <span>Results Declaration:</span>
-                      <span>August 10, 2025</span>
-                    </li>
-                    <li className="flex justify-between">
-                      <span>Counseling & Admission:</span>
-                      <span>August 15-30, 2025</span>
-                    </li>
-                  </ul>
-                </div>
-                <div className="rounded-md bg-gray-50 p-4">
-                  <h4 className="font-medium text-gray-900">
-                    Semester Schedule
-                  </h4>
-                  <ul className="mt-2 space-y-2 text-sm text-gray-600">
-                    <li className="flex justify-between">
-                      <span>Odd Semester Classes Begin:</span>
-                      <span>September 1, 2025</span>
-                    </li>
-                    <li className="flex justify-between">
-                      <span>Mid-term Examinations:</span>
-                      <span>November 1-10, 2025</span>
-                    </li>
-                    <li className="flex justify-between">
-                      <span>End-term Examinations:</span>
-                      <span>January 5-20, 2026</span>
-                    </li>
-                    <li className="flex justify-between">
-                      <span>Even Semester Classes Begin:</span>
-                      <span>February 1, 2026</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div className="p-6">
+              <h4 className="font-medium text-gray-900 text-xl">Diploma in GNM (3 Years)</h4>
+              <p className="mt-2 text-gray-600">Diploma in General Nursing skills and Midwifery.</p>
               <Link
-                href="#"
-                className="mt-6 inline-flex items-center text-teal-600 hover:text-teal-700"
+                href="/contact#admission-form"
+                className="mt-4 inline-flex items-center text-teal-600 hover:text-teal-700"
               >
-                View complete calendar <ChevronRight className="ml-1 h-4 w-4" />
+                Apply for admission <ChevronRight className="ml-1 h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+
+          {/** Card 3 */}
+          <div className="rounded-lg bg-white shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
+            <div className="relative h-48">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="ANM Course"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-6">
+              <h4 className="font-medium text-gray-900 text-xl">Diploma in ANM (2 Years)</h4>
+              <p className="mt-2 text-gray-600">Diploma in Auxiliary Nursing skills and Midwifery.</p>
+              <Link
+                href="/contact#admission-form"
+                className="mt-4 inline-flex items-center text-teal-600 hover:text-teal-700"
+              >
+                Apply for admission <ChevronRight className="ml-1 h-4 w-4" />
               </Link>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Facilities Section */}
       <section id="facilities" className="bg-gray-50 py-16 sm:py-24">
@@ -330,8 +260,8 @@ export default function Home() {
               Campus Facilities
             </h2>
             <p className="mt-4 text-lg text-gray-600 animate-on-scroll animation-delay-200">
-              Explore our state-of-the-art infrastructure and facilities
-              designed to provide an optimal learning environment.
+              Explore our state-of-the-art infrastructure and facilities designed to provide an optimal learning
+              environment.
             </p>
           </div>
 
@@ -341,13 +271,10 @@ export default function Home() {
                 <div className="rounded-full bg-teal-100 p-3">
                   <Building className="h-6 w-6 text-teal-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">
-                  Academic Buildings
-                </h3>
+                <h3 className="text-xl font-bold text-gray-900">Academic Buildings</h3>
               </div>
               <p className="mt-4 text-gray-600">
-                Our modern campus features spacious classrooms, lecture halls,
-                and administrative facilities.
+                Our modern campus features spacious classrooms, lecture halls, and administrative facilities.
               </p>
               <div className="mt-6 overflow-hidden rounded-lg">
                 <FacilityGallery type="buildings" />
@@ -359,13 +286,10 @@ export default function Home() {
                 <div className="rounded-full bg-teal-100 p-3">
                   <BookOpen className="h-6 w-6 text-teal-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">
-                  Library & Learning Resources
-                </h3>
+                <h3 className="text-xl font-bold text-gray-900">Library & Learning Resources</h3>
               </div>
               <p className="mt-4 text-gray-600">
-                Our well-stocked library contains thousands of books, journals,
-                and digital resources.
+                Our well-stocked library contains thousands of books, journals, and digital resources.
               </p>
               <div className="mt-6 overflow-hidden rounded-lg">
                 <FacilityGallery type="library" />
@@ -379,13 +303,10 @@ export default function Home() {
                 <div className="rounded-full bg-teal-100 p-3">
                   <Users className="h-6 w-6 text-teal-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">
-                  Simulation Labs
-                </h3>
+                <h3 className="text-xl font-bold text-gray-900">Simulation Labs</h3>
               </div>
               <p className="mt-4 text-gray-600">
-                Our advanced simulation labs provide hands-on training in
-                realistic healthcare scenarios.
+                Our advanced simulation labs provide hands-on training in realistic healthcare scenarios.
               </p>
               <div className="mt-6 overflow-hidden rounded-lg">
                 <FacilityGallery type="labs" />
@@ -397,13 +318,9 @@ export default function Home() {
                 <div className="rounded-full bg-teal-100 p-3">
                   <Users className="h-6 w-6 text-teal-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">
-                  Student Amenities
-                </h3>
+                <h3 className="text-xl font-bold text-gray-900">Student Amenities</h3>
               </div>
-              <p className="mt-4 text-gray-600">
-                We provide comfortable hostels.
-              </p>
+              <p className="mt-4 text-gray-600">We provide comfortable hostels.</p>
               <ul className="mt-6 space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
@@ -463,15 +380,10 @@ export default function Home() {
             </div>
             <div className="mt-6 rounded-md bg-white p-4">
               <p className="text-gray-600">
-                <strong className="font-medium text-teal-700">
-                  Important Notice:
-                </strong>{" "}
-                The Bihar Student Credit Card Scheme (BSCC) is a{" "}
-                <strong className="underline">loan scheme</strong> provided by
-                the Government of Bihar to help students finance their higher
-                education. This is not a scholarship or grant program. Students
-                and parents are advised to carefully review the terms and
-                conditions before applying.
+                <strong className="font-medium text-teal-700">Important Notice:</strong> The Bihar Student Credit Card
+                Scheme (BSCC) is a <strong className="underline">loan scheme</strong> provided by the Government of
+                Bihar to help students finance their higher education. This is not a scholarship or grant program.
+                Students and parents are advised to carefully review the terms and conditions before applying.
               </p>
               <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div className="rounded-md bg-gray-50 p-3">
@@ -479,9 +391,7 @@ export default function Home() {
                   <ul className="mt-2 list-disc pl-5 text-sm text-gray-600">
                     <li>Education loan up to ₹4 lakhs</li>
                     <li>Annual interest rate of 4%</li>
-                    <li>
-                      Repayment period of up to 10 years after course completion
-                    </li>
+                    <li>Repayment period of up to 10 years after course completion</li>
                     <li>No collateral required</li>
                   </ul>
                 </div>
@@ -496,12 +406,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="mt-4 text-center">
-                <Link
-                  href="#"
-                  className="inline-flex items-center text-teal-600 hover:text-teal-700"
-                >
-                  Learn more about BSCC{" "}
-                  <ChevronRight className="ml-1 h-4 w-4" />
+                <Link href="#" className="inline-flex items-center text-teal-600 hover:text-teal-700">
+                  Learn more about BSCC <ChevronRight className="ml-1 h-4 w-4" />
                 </Link>
               </div>
             </div>
@@ -510,7 +416,7 @@ export default function Home() {
       </section>
 
       {/* News & Notifications Section */}
-      {/* <section id="news" className="bg-white py-16 sm:py-24">
+      <section id="news" className="bg-white py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl animate-on-scroll">
@@ -525,7 +431,7 @@ export default function Home() {
             <NewsNotifications />
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Anti-Ragging Section */}
       <section id="anti-ragging" className="bg-gray-50 py-16 sm:py-24">
@@ -540,11 +446,10 @@ export default function Home() {
               </h2>
             </div>
             <p className="mt-6 text-gray-600">
-              S.K.M. College of Nursing & Paramedical maintains a zero-tolerance
-              policy towards ragging in any form. Ragging is strictly prohibited
-              within the campus, hostels, and all institute-affiliated
-              locations. Any student found engaging in ragging will face severe
-              disciplinary action as per UGC regulations and state laws.
+              S.K.M. College of Nursing & Paramedical maintains a zero-tolerance policy towards ragging in any form.
+              Ragging is strictly prohibited within the campus, hostels, and all institute-affiliated locations. Any
+              student found engaging in ragging will face severe disciplinary action as per UGC regulations and state
+              laws.
             </p>
             {/* <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
               <div className="rounded-md bg-white p-4 shadow-sm">
@@ -601,5 +506,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  );
+  )
 }
