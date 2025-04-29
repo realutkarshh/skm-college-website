@@ -37,16 +37,16 @@ export default function FacilityGallery({ type }: FacilityGalleryProps) {
         alt: "Administrative Block",
         caption: "Administrative Block housing offices and meeting rooms",
       },
-      {
-        src: BuildingImage3,
-        alt: "Student Center",
-        caption: "Classroom for Students",
-      },
-      {
-        src: "/placeholder.svg?height=400&width=600&text=Hostel Building",
-        alt: "Hostel Building",
-        caption: "Modern hostel facilities for students",
-      },
+      // {
+      //   src: BuildingImage3,
+      //   alt: "Student Center",
+      //   caption: "Classroom for Students",
+      // },
+      // {
+      //   src: "/placeholder.svg?height=400&width=600&text=Hostel Building",
+      //   alt: "Hostel Building",
+      //   caption: "Modern hostel facilities for students",
+      // },
     ],
     labs: [
       {
@@ -59,16 +59,16 @@ export default function FacilityGallery({ type }: FacilityGalleryProps) {
         alt: "Anatomy Lab",
         caption: "Well-equipped anatomy and physiology laboratory",
       },
-      {
-        src: LabImage3,
-        alt: "Computer Lab",
-        caption: "Computer lab with nursing informatics resources",
-      },
-      {
-        src: LabImage4,
-        alt: "Skills Lab",
-        caption: "Nursing skills lab for practical training",
-      },
+      // {
+      //   src: LabImage3,
+      //   alt: "Computer Lab",
+      //   caption: "Computer lab with nursing informatics resources",
+      // },
+      // {
+      //   src: LabImage4,
+      //   alt: "Skills Lab",
+      //   caption: "Nursing skills lab for practical training",
+      // },
     ],
     library: [
       {
