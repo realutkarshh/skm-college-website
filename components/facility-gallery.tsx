@@ -5,7 +5,7 @@ import Image from "next/image"
 import { ChevronLeft, ChevronRight, X } from "lucide-react"
 import LabImage1 from "../public/lab-1.jpeg"
 import LabImage2 from "../public/lab-2.jpeg"
-import LabImage3 from "../public/lab-3.jpg"
+import LabImage3 from "../public/lab-3.png"
 import LabImage4 from "../public/lab-4.jpg"
 import BuildingImage1 from "../public/building-image1.jpeg"
 import BuildingImage2 from "../public/building-image2.jpeg"
@@ -59,11 +59,11 @@ export default function FacilityGallery({ type }: FacilityGalleryProps) {
         alt: "Anatomy Lab",
         caption: "Well-equipped anatomy and physiology laboratory",
       },
-      // {
-      //   src: LabImage3,
-      //   alt: "Computer Lab",
-      //   caption: "Computer lab with nursing informatics resources",
-      // },
+      {
+        src: LabImage3,
+        alt: "Computer Lab",
+        caption: "Computer lab with nursing informatics resources",
+      },
       // {
       //   src: LabImage4,
       //   alt: "Skills Lab",

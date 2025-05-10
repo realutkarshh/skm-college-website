@@ -18,6 +18,11 @@ import NewsNotifications from "@/components/news-notifications"
 import FacilityGallery from "@/components/facility-gallery"
 import ImageCarousel from "@/components/image-carousel"
 import HeroImage from "../public/hero-main.jpeg"
+import HeroImage2 from "../public/building-image1.jpeg"
+import HeroImage3 from "../public/building-image2.jpeg"
+import BscNursingImage from "../public/Bsc-nursing-course.jpeg"
+import diplomaInGnmImage from "../public/diploma-in-gnm.jpeg"
+import diplomaInAnmImage from "../public/diploma-in-anm.jpeg"
 
 export default function Home() {
   return (
@@ -30,9 +35,9 @@ export default function Home() {
           <ImageCarousel
             images={[
               { src: HeroImage.src, alt: "Nursing students in classroom" },
-              { src: HeroImage.src, alt: "Nursing simulation lab" },
-              { src: HeroImage.src, alt: "College campus" },
-              { src: HeroImage.src, alt: "Students in clinical practice" },
+              { src: HeroImage2.src, alt: "Nursing simulation lab" },
+              { src: HeroImage3.src, alt: "College campus" },
+              // { src: HeroImage.src, alt: "Students in clinical practice" },
             ]}
           />
           <div className="container relative mx-auto px-4 py-8 sm:px-6 lg:flex lg:h-screen lg:max-h-[800px] lg:items-center lg:px-8 lg:py-24">
@@ -182,7 +187,7 @@ export default function Home() {
           <div className="rounded-lg bg-white shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
             <div className="relative h-48">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src={BscNursingImage}
                 alt="B.Sc. Nursing"
                 fill
                 className="object-cover"
@@ -206,7 +211,7 @@ export default function Home() {
           <div className="rounded-lg bg-white shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
             <div className="relative h-48">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src={diplomaInGnmImage}
                 alt="GNM Course"
                 fill
                 className="object-cover"
@@ -228,7 +233,7 @@ export default function Home() {
           <div className="rounded-lg bg-white shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
             <div className="relative h-48">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src={diplomaInAnmImage}
                 alt="ANM Course"
                 fill
                 className="object-cover"

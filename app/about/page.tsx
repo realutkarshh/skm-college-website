@@ -1,10 +1,17 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ChevronRight, Award, Users, BookOpen, Clock, MapPin } from "lucide-react"
-import OurStoryImage from "/public/our-story.jpeg"
-import DoctorImage1 from "/public/doctor-image1.png"
-import DoctorImage2 from "/public/doctor-image2.jpg"
-import DoctorImage3 from "/public/doctor-image3.png"
+import Image from "next/image";
+import Link from "next/link";
+import {
+  ChevronRight,
+  Award,
+  Users,
+  BookOpen,
+  Clock,
+  MapPin,
+} from "lucide-react";
+import OurStoryImage from "/public/our-story.jpeg";
+import DoctorImage1 from "/public/doctor-image1.png";
+import DoctorImage2 from "/public/doctor-image2.jpg";
+import DoctorImage3 from "/public/doctor-image3.png";
 
 export default function AboutPage() {
   return (
@@ -13,9 +20,12 @@ export default function AboutPage() {
       <section className="bg-gradient-to-b from-teal-50 to-white py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">About Us</h1>
+            <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
+              About Us
+            </h1>
             <p className="mt-4 text-lg text-gray-600">
-              Learn more about S.K.M. College of Nursing & Paramedical, our history, mission, and commitment to excellence in nursing
+              Learn more about S.K.M. College of Nursing & Paramedical, our
+              history, mission, and commitment to excellence in nursing
               education.
             </p>
           </div>
@@ -27,19 +37,28 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
             <div className="flex flex-col justify-center">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900">Our Story</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+                Our Story
+              </h2>
               <p className="mt-4 text-lg text-gray-600">
-              S.K.M. College of Nursing & Paramedical was established in 2023 with a vision to create a center of excellence for
-                nursing education in Bihar. Over the years, we have grown to become one of the leading nursing
-                institutions in the region, known for our quality education, state-of-the-art facilities.
-              </p>
-              <p className="mt-4 text-lg text-gray-600">
-                Our institute was founded by a group of healthcare professionals and educators who recognized the need
-                for well-trained nursing professionals in the healthcare sector. We now admit over 180 students annually across various nursing programs.
-              </p>
-              <p className="mt-4 text-lg text-gray-600">
-                We take pride in our alumni who are serving in prestigious healthcare institutions across India and
-                abroad, making significant contributions to patient care and healthcare delivery.
+                The aim of this college is to impart proper training as per
+                norms and standards of National Council for Teacher Education,
+                New Delhi, and of the University of Tilkamanjhi Bhagalpur
+                University. Great stress will given to buildup character to
+                improve intelligence, aptitude, creativity, personality etc.
+                through different psychological test. Strict adherence to
+                routine, rules and discipline of the college will be essential
+                for the satisfactory attainment of the objectives. These are the
+                mottos of the Governing Body of this Institution. To produce
+                quality teachers for playing their significant role in the
+                emerging knowledge of the society for educational reconstruction
+                tending to result in total reconstruction of the nation by
+                adhering to the very statement of the Education Commission
+                (1964-66) that, “The destiny of India is being shaped in her
+                classrooms”. The vision of this Institution to be one of the
+                best Teachers Training Centre in the State producing dedicated
+                teachers who will have the ideal of man-making education
+                propounded by Swami Vivekananda. This mission is as under:
               </p>
             </div>
             <div className="order-first lg:order-last">
@@ -61,10 +80,19 @@ export default function AboutPage() {
       <section className="bg-gray-50 py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">Our Mission & Vision</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+              Our Mission & Vision
+            </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Guided by our core values, we strive to make a positive impact on healthcare through education and
-              training.
+              SKM B.Ed. College believes that teachers are made through training
+              and aims to actively engage trainees in learning, teaching, and
+              knowledge-building. It promotes participation in extracurriculars,
+              research, and community-based projects for overall development.
+              The college collaborates with educational bodies to ensure quality
+              education, especially in rural areas, supports women’s higher
+              education, and creates job opportunities. It offers B.Ed. and
+              D.El.Ed. courses with the goal of becoming a center of excellence
+              in teacher education.
             </p>
           </div>
 
@@ -77,29 +105,44 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold text-gray-900">Our Mission</h3>
               </div>
               <p className="mt-4 text-gray-600">
-                To develop competent, compassionate, and ethical nursing professionals who contribute to improving
-                healthcare outcomes in society through:
+                To develop competent, compassionate, and ethical nursing
+                professionals who contribute to improving healthcare outcomes in
+                society through:
               </p>
               <ul className="mt-4 space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
-                  <span>Providing high-quality nursing education that integrates theory and practice</span>
+                  <span>
+                    Providing high-quality nursing education that integrates
+                    theory and practice
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
-                  <span>Fostering critical thinking, clinical reasoning, and evidence-based practice</span>
+                  <span>
+                    Fostering critical thinking, clinical reasoning, and
+                    evidence-based practice
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
-                  <span>Promoting research and innovation in nursing and healthcare</span>
+                  <span>
+                    Promoting research and innovation in nursing and healthcare
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
-                  <span>Instilling professional values, ethics, and a commitment to lifelong learning</span>
+                  <span>
+                    Instilling professional values, ethics, and a commitment to
+                    lifelong learning
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
-                  <span>Serving the healthcare needs of the community through outreach programs</span>
+                  <span>
+                    Serving the healthcare needs of the community through
+                    outreach programs
+                  </span>
                 </li>
               </ul>
             </div>
@@ -112,14 +155,20 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold text-gray-900">Our Vision</h3>
               </div>
               <p className="mt-4 text-gray-600">
-                To be recognized as a center of excellence in nursing education, research, and practice, producing
-                leaders who transform healthcare delivery and improve patient outcomes.
+                To be recognized as a center of excellence in nursing education,
+                research, and practice, producing leaders who transform
+                healthcare delivery and improve patient outcomes.
               </p>
-              <p className="mt-4 text-gray-600">We envision S.K.M. College of Nursing & Paramedical Institute as:</p>
+              <p className="mt-4 text-gray-600">
+                We envision S.K.M. College of Nursing & Paramedical Institute
+                as:
+              </p>
               <ul className="mt-4 space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
-                  <span>A premier institution for nursing education in Eastern India</span>
+                  <span>
+                    A premier institution for nursing education in Eastern India
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
@@ -127,11 +176,17 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
-                  <span>A community of scholars and practitioners committed to healthcare excellence</span>
+                  <span>
+                    A community of scholars and practitioners committed to
+                    healthcare excellence
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-teal-600"></span>
-                  <span>A catalyst for positive change in healthcare delivery systems</span>
+                  <span>
+                    A catalyst for positive change in healthcare delivery
+                    systems
+                  </span>
                 </li>
               </ul>
             </div>
@@ -143,9 +198,12 @@ export default function AboutPage() {
       <section className="bg-white py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">Our Core Values</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+              Our Core Values
+            </h2>
             <p className="mt-4 text-lg text-gray-600">
-              These principles guide our approach to education, research, and community service.
+              These principles guide our approach to education, research, and
+              community service.
             </p>
           </div>
 
@@ -154,10 +212,13 @@ export default function AboutPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-teal-100">
                 <Award className="h-6 w-6 text-teal-600" />
               </div>
-              <h3 className="mt-4 text-lg font-medium text-gray-900">Excellence</h3>
+              <h3 className="mt-4 text-lg font-medium text-gray-900">
+                Excellence
+              </h3>
               <p className="mt-2 text-gray-600">
-                We strive for excellence in all aspects of education, research, and service, setting high standards and
-                continuously improving our programs and practices.
+                We strive for excellence in all aspects of education, research,
+                and service, setting high standards and continuously improving
+                our programs and practices.
               </p>
             </div>
 
@@ -165,10 +226,13 @@ export default function AboutPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-teal-100">
                 <Users className="h-6 w-6 text-teal-600" />
               </div>
-              <h3 className="mt-4 text-lg font-medium text-gray-900">Compassion</h3>
+              <h3 className="mt-4 text-lg font-medium text-gray-900">
+                Compassion
+              </h3>
               <p className="mt-2 text-gray-600">
-                We foster empathy, kindness, and respect for human dignity, recognizing that compassionate care is
-                essential to the nursing profession and patient well-being.
+                We foster empathy, kindness, and respect for human dignity,
+                recognizing that compassionate care is essential to the nursing
+                profession and patient well-being.
               </p>
             </div>
 
@@ -176,10 +240,13 @@ export default function AboutPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-teal-100">
                 <Award className="h-6 w-6 text-teal-600" />
               </div>
-              <h3 className="mt-4 text-lg font-medium text-gray-900">Integrity</h3>
+              <h3 className="mt-4 text-lg font-medium text-gray-900">
+                Integrity
+              </h3>
               <p className="mt-2 text-gray-600">
-                We uphold the highest ethical standards, promoting honesty, transparency, and accountability in all our
-                interactions and professional practice.
+                We uphold the highest ethical standards, promoting honesty,
+                transparency, and accountability in all our interactions and
+                professional practice.
               </p>
             </div>
 
@@ -187,10 +254,13 @@ export default function AboutPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-teal-100">
                 <BookOpen className="h-6 w-6 text-teal-600" />
               </div>
-              <h3 className="mt-4 text-lg font-medium text-gray-900">Innovation</h3>
+              <h3 className="mt-4 text-lg font-medium text-gray-900">
+                Innovation
+              </h3>
               <p className="mt-2 text-gray-600">
-                We encourage creativity, critical thinking, and evidence-based approaches to address healthcare
-                challenges and improve nursing practice.
+                We encourage creativity, critical thinking, and evidence-based
+                approaches to address healthcare challenges and improve nursing
+                practice.
               </p>
             </div>
 
@@ -198,10 +268,13 @@ export default function AboutPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-teal-100">
                 <Users className="h-6 w-6 text-teal-600" />
               </div>
-              <h3 className="mt-4 text-lg font-medium text-gray-900">Diversity & Inclusion</h3>
+              <h3 className="mt-4 text-lg font-medium text-gray-900">
+                Diversity & Inclusion
+              </h3>
               <p className="mt-2 text-gray-600">
-                We value and respect diversity in all its forms, creating an inclusive environment that celebrates
-                different perspectives, backgrounds, and experiences.
+                We value and respect diversity in all its forms, creating an
+                inclusive environment that celebrates different perspectives,
+                backgrounds, and experiences.
               </p>
             </div>
 
@@ -209,10 +282,13 @@ export default function AboutPage() {
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-teal-100">
                 <Clock className="h-6 w-6 text-teal-600" />
               </div>
-              <h3 className="mt-4 text-lg font-medium text-gray-900">Lifelong Learning</h3>
+              <h3 className="mt-4 text-lg font-medium text-gray-900">
+                Lifelong Learning
+              </h3>
               <p className="mt-2 text-gray-600">
-                We promote continuous professional development and a commitment to lifelong learning, adapting to the
-                evolving healthcare landscape.
+                We promote continuous professional development and a commitment
+                to lifelong learning, adapting to the evolving healthcare
+                landscape.
               </p>
             </div>
           </div>
@@ -223,9 +299,12 @@ export default function AboutPage() {
       <section className="bg-gray-50 py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">Our Leadership</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+              Our Leadership
+            </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Meet the dedicated professionals who guide our institution towards excellence.
+              Meet the dedicated professionals who guide our institution towards
+              excellence.
             </p>
           </div>
 
@@ -240,10 +319,13 @@ export default function AboutPage() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <h3 className="mt-4 text-xl font-bold text-gray-900">Dr. Sharma</h3>
+              <h3 className="mt-4 text-xl font-bold text-gray-900">
+                Dr. Sharma
+              </h3>
               <p className="text-teal-600">Principal & Director</p>
               <p className="mt-2 text-sm text-gray-600">
-                Ph.D. in Nursing, M.Sc. Nursing with 25+ years of experience in nursing education and administration.
+                Ph.D. in Nursing, M.Sc. Nursing with 25+ years of experience in
+                nursing education and administration.
               </p>
             </div>
 
@@ -257,11 +339,15 @@ export default function AboutPage() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <h3 className="mt-4 text-xl font-bold text-gray-900">Dr. Kumar</h3>
-              <p className="text-teal-600">Vice Principal & Dean of Academics</p>
+              <h3 className="mt-4 text-xl font-bold text-gray-900">
+                Dr. Kumar
+              </h3>
+              <p className="text-teal-600">
+                Vice Principal & Dean of Academics
+              </p>
               <p className="mt-2 text-sm text-gray-600">
-                Ph.D. in Nursing, M.Sc. Nursing (Medical-Surgical) with expertise in curriculum development and academic
-                leadership.
+                Ph.D. in Nursing, M.Sc. Nursing (Medical-Surgical) with
+                expertise in curriculum development and academic leadership.
               </p>
             </div>
 
@@ -275,10 +361,13 @@ export default function AboutPage() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              <h3 className="mt-4 text-xl font-bold text-gray-900">Dr. Singh</h3>
+              <h3 className="mt-4 text-xl font-bold text-gray-900">
+                Dr. Singh
+              </h3>
               <p className="text-teal-600">Dean of Research & Development</p>
               <p className="mt-2 text-sm text-gray-600">
-                Ph.D. in Psychiatric Nursing with a strong background in healthcare research and innovation.
+                Ph.D. in Psychiatric Nursing with a strong background in
+                healthcare research and innovation.
               </p>
             </div>
           </div>
@@ -303,20 +392,26 @@ export default function AboutPage() {
                 <div className="rounded-full bg-teal-100 p-3">
                   <MapPin className="h-6 w-6 text-teal-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900">Our Location</h3>
+                <h3 className="text-xl font-bold text-gray-900">
+                  Our Location
+                </h3>
               </div>
               <p className="mt-4 text-gray-600">
-                S.K.M. College of Nursing & Paramedical Institute is located in Dadhi Pakaria, Shambhu Ganj, Banka, Bihar, making it easily accessible
-                from all parts of the city. Our campus is situated in a peaceful environment conducive to learning, yet
-                close to hospitals and healthcare facilities where our students gain practical experience.
+                S.K.M. College of Nursing & Paramedical Institute is located in
+                Dadhi Pakaria, Shambhu Ganj, Banka, Bihar, making it easily
+                accessible from all parts of the city. Our campus is situated in
+                a peaceful environment conducive to learning, yet close to
+                hospitals and healthcare facilities where our students gain
+                practical experience.
               </p>
               <p className="mt-4 text-gray-600">
                 The campus is well-connected by public transportation.
               </p>
               <div className="mt-6">
                 <h4 className="font-medium text-gray-900">Address:</h4>
-                <p className="text-gray-600">Dadhi Pakaria, Shambhu Ganj,
-                Banka, Bihar- 813211.</p>
+                <p className="text-gray-600">
+                  Dadhi Pakaria, Shambhu Ganj, Banka, Bihar- 813211.
+                </p>
                 {/* <p className="mt-2 text-gray-600">
                   <span className="font-medium">Landmarks:</span> Near City Hospital, 2 km from Gandhi Maidan
                 </p> */}
@@ -342,9 +437,12 @@ export default function AboutPage() {
       <section className="bg-teal-50 py-16 sm:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900">Begin Your Nursing Journey With Us</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+              Begin Your Nursing Journey With Us
+            </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Take the first step towards a rewarding career in healthcare by joining S.K.M. College of Nursing & Paramedical.
+              Take the first step towards a rewarding career in healthcare by
+              joining S.K.M. College of Nursing & Paramedical.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Link
@@ -364,5 +462,5 @@ export default function AboutPage() {
         </div>
       </section>
     </>
-  )
+  );
 }
