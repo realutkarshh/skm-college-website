@@ -6,10 +6,10 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react"
 import LabImage1 from "../public/lab-1.jpeg"
 import LabImage2 from "../public/lab-2.jpeg"
 import LabImage3 from "../public/lab-3.png"
-import LabImage4 from "../public/lab-4.jpg"
+import LabImage4 from "../public/lab-4.png"
 import BuildingImage1 from "../public/building-image1.jpeg"
 import BuildingImage2 from "../public/building-image2.jpeg"
-import BuildingImage3 from "../public/building-image3.jpg"
+import BuildingImage3 from "../public/building-image3.png"
 import LibraryImage1 from "../public/library-image1.jpg"
 import LibraryImage2 from "../public/library-image2.jpg"
 import LibraryImage3 from "../public/library-image3.jpg"
@@ -37,11 +37,11 @@ export default function FacilityGallery({ type }: FacilityGalleryProps) {
         alt: "Administrative Block",
         caption: "Administrative Block housing offices and meeting rooms",
       },
-      // {
-      //   src: BuildingImage3,
-      //   alt: "Student Center",
-      //   caption: "Classroom for Students",
-      // },
+      {
+        src: BuildingImage3,
+        alt: "Student Center",
+        caption: "Classroom for Students",
+      },
       // {
       //   src: "/placeholder.svg?height=400&width=600&text=Hostel Building",
       //   alt: "Hostel Building",
@@ -64,11 +64,11 @@ export default function FacilityGallery({ type }: FacilityGalleryProps) {
         alt: "Computer Lab",
         caption: "Computer lab with nursing informatics resources",
       },
-      // {
-      //   src: LabImage4,
-      //   alt: "Skills Lab",
-      //   caption: "Nursing skills lab for practical training",
-      // },
+      {
+        src: LabImage4,
+        alt: "Skills Lab",
+        caption: "Nursing skills lab for practical training",
+      },
     ],
     library: [
       {
